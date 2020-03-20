@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewGPS"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+
+            android:text="@string/provider_gps"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEnableGPS"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewGPS"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGPS" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNetwork"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            android:text="@string/provider_network"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewEnableGPS"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEnableGPS" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEnableNetwork"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewNetwork"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNetwork" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLocation"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewEnableNetwork"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEnableNetwork" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonGetLocation"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+
+            android:text="@string/location_settings"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
